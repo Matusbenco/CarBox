@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cenník služieb - CarBox</title>
+    <title>Cenník - Autoservis, Pneuservis, Geometria | CarBox</title>
     <meta name="description" content="Prehľadný cenník našich autoservisných, pneuservisných a ďalších služieb. Zistite orientačné ceny opráv a údržby.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,22 +44,22 @@
    <nav class="bg-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between h-20">
-            <a href="index.html"><img src="carbox_logo_t.png" alt="CarBox Logo" class="h-16 w-auto"/></a>
+            <a href="/"><img src="carbox_logo_t.png" alt="CarBox Logo" class="h-16 w-auto"/></a>
             <div class="hidden md:flex items-center space-x-8">
                 <div class="relative group">
                     <button class="text-gray-700 hover:text-red-600 transition-colors py-2">Služby</button>
                     <div class="absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
                         <div class="py-1">
-                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="autoservis.html">Autoservis</a>
-                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="pneuservis.html">Pneuservis</a>
-                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="geometria.html">Geometria</a>
-                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="lakovna.html">Lakovňa</a>
+                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="autoservis">Autoservis</a>
+                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="pneuservis">Pneuservis</a>
+                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="geometria">Geometria</a>
+                            <a class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600" href="lakovna">Lakovňa</a>
                         </div>
                     </div>
                 </div>
-                <a class="text-gray-700 hover:text-red-600 transition-colors py-2" href="blog.html">Blog</a>
-                <a class="text-gray-700 hover:text-red-600 transition-colors py-2" href="cennik.html">Cenník</a>
-                <a class="text-gray-700 hover:text-red-600 transition-colors py-2" href="index.html#contact">Kontakt</a>
+                <a class="text-gray-700 hover:text-red-600 transition-colors py-2" href="blog">Blog</a>
+                <a class="text-gray-700 hover:text-red-600 transition-colors py-2" href="cennik">Cenník</a>
+                <a class="text-gray-700 hover:text-red-600 transition-colors py-2" href="/#contact">Kontakt</a>
                 <button id="open-booking-modal-desktop" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium h-10 px-6 py-2 bg-red-600 hover:bg-red-700 text-white">Objednať sa</button>
             </div>
             <button id="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-red-600">
@@ -67,13 +69,13 @@
     </div>
 </nav>
 <div id="mobile-menu" class="mobile-menu">
-    <a href="autoservis.html" class="mobile-menu-item">Autoservis</a>
-    <a href="pneuservis.html" class="mobile-menu-item">Pneuservis</a>
-    <a href="geometria.html" class="mobile-menu-item">Geometria</a>
-    <a href="lakovna.html" class="mobile-menu-item">Lakovňa</a>
-    <a href="blog.html" class="mobile-menu-item">Blog</a>
-    <a href="cennik.html" class="mobile-menu-item">Cenník</a>
-    <a href="index.html#contact" class="mobile-menu-item">Kontakt</a>
+    <a href="autoservis" class="mobile-menu-item">Autoservis</a>
+    <a href="pneuservis" class="mobile-menu-item">Pneuservis</a>
+    <a href="geometria" class="mobile-menu-item">Geometria</a>
+    <a href="lakovna" class="mobile-menu-item">Lakovňa</a>
+    <a href="blog" class="mobile-menu-item">Blog</a>
+    <a href="cennik" class="mobile-menu-item">Cenník</a>
+    <a href="/#contact" class="mobile-menu-item">Kontakt</a>
     <button id="open-booking-modal-mobile" class="w-full mt-4 text-white bg-red-600 hover:bg-red-700 py-3 rounded-lg font-semibold">Objednať sa</button>
 </div>
 
@@ -99,7 +101,7 @@
                                 <tr><td>Hodinová sadzba - mechanické práce</td><td class="font-bold text-right">od 35 €</td></tr>
                                 <tr><td>Počítačová diagnostika</td><td class="font-bold text-right">30 €</td></tr>
                                 <tr><td>Výmena oleja a filtra (práca)</td><td class="font-bold text-right">od 25 €</td></tr>
-                                <tr><td>Výmena brzdových platničiek (1 náprava)</td><td class="font-bold text-right">od 40 €</td></tr>
+                                <tr><td>Výmena brzdových platničiek (1 náprava)</td><td class="font-bold text-right">od 30 €</td></tr>
                                 <tr><td>Výmena brzdových kotúčov a platničiek</td><td class="font-bold text-right">od 70 €</td></tr>
                                 <tr><td>Servis a plnenie klimatizácie (R134a)</td><td class="font-bold text-right">od 60 €</td></tr>
                                 <tr><td>Dezinfekcia klimatizácie ozónom</td><td class="font-bold text-right">20 €</td></tr>
@@ -177,7 +179,16 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-gray-600 mt-16 pt-8 text-center text-gray-400"><p>© 2024 CarBox. Všetky práva vyhradené.</p></div>
+        <div class="border-t border-gray-600 mt-16 pt-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        <p class="mb-2 md:mb-0">&copy; 2025 CarBox. Všetky práva vyhradené.</p>
+
+        <p>
+            Webstránku vytvoril Matúš Benčo - 
+            <a href="https://unoneto.eu" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Unoneto.eu</a>
+        </p>
+    </div>
+</div>
     </footer>
     
     <div id="booking-modal" class="modal-overlay">
@@ -185,7 +196,7 @@
             <span class="modal-close-button">&times;</span>
             <h2 class="text-2xl font-bold mb-4 text-center text-gray-800">Objednajte sa na servis</h2>
             <p class="text-center text-gray-600 mb-6">Vyplňte formulár a my sa vám čo najskôr ozveme.</p>
-         <form action="https://formspree.io/f/xyzjaepv" method="POST" class="space-y-4">
+         <form action="https://formspree.io/f/mqalzkbl" method="POST" class="space-y-4">
     <div>
         <label class="block text-sm font-medium text-gray-700">Váš email:</label>
         <input type="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500">
